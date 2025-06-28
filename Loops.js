@@ -40,3 +40,13 @@ for (let l = 0; l < Number.length; l++) {
 }
 // console.log(multipliedNumber);
 
+// example 5 write a "for loop" that lists all the cities in the array["Paris", "New York", "Tokiyo","London"] and stors each city in new array named "cityList"
+
+let cities = ["Paris", "New York", "Tokiyo","London"];
+let cityList =[];
+for (let c = 0; c < cities.length; c++) {
+    const myCity =cities[c];
+    cityList.push(myCity);  
+} 
+console.log(cityList);
+
