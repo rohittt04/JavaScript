@@ -52,7 +52,7 @@ let totalcost2 = calculatetotal2(3,44);
 
 // Higher order functions 
 
-/* eg 4 write an function named 'processCoffeeOrder' that takes another function, 'makeCoffee', as a parameter and calls it with the argument '"latee"'.  
+/* eg 4 write an function named 'processCoffeeOrder' that takes another function, 'makeCoffee', as a parameter and calls it with the argument '"latte"'.  
 return the result of makincoffee */
 
 
@@ -61,7 +61,21 @@ function makeCoffee(typeofcoffee){
    } 
 
 function processCoffeeOrder(CoffeeFunction){
-   return CoffeeFunction("latee")
+   return CoffeeFunction("latte")
 }
 let order = processCoffeeOrder(makeCoffee)
-console.log(order);
+// console.log(order);
+
+/* eg 5 make a function "CreateCoffeeMaker" that returns another function. The returned function should take  one parameter , 'CoffeeType', and return message '"making lattee".
+Store the returned function in a variable named 'CoffeeMaker' and call it with '"latte"'. */
+
+function CreateCoffeeMaker(){
+    return function(CoffeeType) {
+        return `making ${CoffeeType}`; 
+    };
+}
+
+let Coffeemaker = CreateCoffeeMaker()
+let result = Coffeemaker("latte")
+console.log(result);
+ 
