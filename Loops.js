@@ -48,5 +48,10 @@ for (let c = 0; c < cities.length; c++) {
     const myCity =cities[c];
     cityList.push(myCity);  
 } 
-console.log(cityList);
+// console.log(cityList);
 
+// other thypes of loop
+// forEach 
+// dowhile 
+// forin 
+// forof 
