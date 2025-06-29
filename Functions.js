@@ -30,3 +30,20 @@ let orderconfirmation = orderCoffee("black coffee")
 
 console.log(orderconfirmation);
 
+// arrow functions
+
+/* eg 3 write an arrow function 'calculate total' that takes two parameters : 'price' and 'quantity'. the function should return the total cost by multiplying the 'price' and 'quantity' 
+store the result ina variable named 'totalcost' */
+
+const calculatetotal = (price , quantity ) => {
+     return price * quantity;
+}
+let totalcost = calculatetotal(300,5);
+console.log(totalcost);
+
+
+// another type which is called implecit returns is :
+
+const calculatetotal2 = (price , quantity ) =>  price * quantity;
+let totalcost2 = calculatetotal2(3,44);
+console.log(totalcost2);
