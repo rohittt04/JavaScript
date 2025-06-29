@@ -28,7 +28,7 @@ function orderCoffee(coffeetype){
 
 let orderconfirmation = orderCoffee("black coffee")
 
-console.log(orderconfirmation);
+// console.log(orderconfirmation);
 
 // arrow functions
 
@@ -39,11 +39,29 @@ const calculatetotal = (price , quantity ) => {
      return price * quantity;
 }
 let totalcost = calculatetotal(300,5);
-console.log(totalcost);
+// console.log(totalcost);
 
 
 // another type which is called implecit returns is :
 
 const calculatetotal2 = (price , quantity ) =>  price * quantity;
 let totalcost2 = calculatetotal2(3,44);
-console.log(totalcost2);
+// console.log(totalcost2);
+
+
+
+// Higher order functions 
+
+/* eg 4 write an function named 'processCoffeeOrder' that takes another function, 'makeCoffee', as a parameter and calls it with the argument '"latee"'.  
+return the result of makincoffee */
+
+
+function makeCoffee(typeofcoffee){
+    return `making ${typeofcoffee}`
+   } 
+
+function processCoffeeOrder(CoffeeFunction){
+   return CoffeeFunction("latee")
+}
+let order = processCoffeeOrder(makeCoffee)
+console.log(order);
