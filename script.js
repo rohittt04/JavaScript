@@ -1,20 +1,22 @@
-// Data types
+/* Data types
 
-// prinmitive :
-// string ,boolean,number, null,undefine,Symbol
+prinmitive :
+string ,boolean,number, null,undefine,Symbol
 
-// Nonprinmitive
-// Object,
-// Array,function
+Nonprinmitive
+Object,
+Array,function */
+
+// example
 
 // let firstname = null; // empty
-// let lastname = undefined; // will define in future
+// let lastname = undefined; // will be define in future
 
 // console.log(firstname);
 // console.log(lastname);
 
 
-// Object
+// Objects
 
 // let username = {
 //     firstname : "rohit",
@@ -26,6 +28,10 @@
 /*
 // condition 
 
+/* if 
+   if else 
+   else 
+
 let a = 1;
 let b = 3;
 
@@ -34,6 +40,6 @@ if ( a > b){
 } else{
     console.log(`${b} is grater`);
 }    
-    */
+*/
 
 
