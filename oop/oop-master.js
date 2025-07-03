@@ -103,10 +103,27 @@ class CoffeeMachine{
  
 
 
- //Polymorephysm
+ //Polymorephysm - same name but different attribute 
+
+ class birds {
+   fly(){
+    return`birds can fly...`;
+   }
+}
+
+class panguine extends birds {
+    fly(){
+        return `panguins can not fly...`;
+    }
+}
 
 
+let bird = new birds()
+let myPanguine = new panguine()
 
+console.log(bird.fly());
+console.log(myPanguine.fly());
+/* so here the out put is birds can fly... and  panguins can not fly... but we are using same attribute ? well that's what is called polymorephysm - in my words "same name different attribute " */
 
 
 
