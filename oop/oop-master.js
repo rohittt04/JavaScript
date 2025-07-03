@@ -56,6 +56,61 @@ class Car extends Vehical {
 }
 
 let myCar = new Car("toyota" , "hylex")
-console.log(myCar.start());
-console.log(myCar.drive());
+// console.log(myCar.start());
+// console.log(myCar.drive());
+
+
+//Encapsulation
+
+class BankAccount{
+    #Balance = 0; // so frim this "#" no one can access it out side the class but we can access it inside the class
+
+    deposit(amount){
+        this.#Balance += amount;
+        return this.#Balance;
+    }
+
+    getBalance(){
+        return `$ ${this.#Balance}`
+    }
+}
+
+let account = new BankAccount()
+// console.log(account.getBalance());
+
+//Abstraction
+
+class CoffeeMachine{
+    start(){
+        return `Starting the machine...`;
+    }
+
+    brewCoffee(){
+        return `Your coffee is brewing...`
+    }
+
+    PressStartButton(){
+        let msgone = this.start();
+        let msgtwo = this.brewCoffee();
+
+        return `${msgone} + ${msgtwo}`
+
+    }
+}
+
+ let myMachine = new CoffeeMachine();
+//  console.log(myMachine.PressStartButton());
+ 
+
+
+ //Polymorephysm
+
+
+
+
+
+
+
+
+
 
