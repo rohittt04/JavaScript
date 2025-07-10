@@ -17,3 +17,18 @@ document.getElementById("ChangeOrder").addEventListener('click', function(){
     let CoffeeType  = document.getElementById("CoffeeType");
     CoffeeType.textContent = "Espresso";
 })
+
+//eg 4
+document.getElementById("addNewItem").addEventListener('click', function(){
+
+    let newItem = document.createElement("li")
+    newItem.textContent = "Honey"
+    document.getElementById("ShoppingList").appendChild(newItem);
+
+})
+
+//eg 5
+document.getElementById("removeLastTask").addEventListener('click', function(){
+    let TaskList = document.getElementById("TaskList")
+    TaskList.lastElementChild.remove();
+})
